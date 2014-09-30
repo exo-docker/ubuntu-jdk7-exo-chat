@@ -2,7 +2,7 @@
 
 * Ubuntu 14.04
 * Oracle JDK 7 update 60
-* eXo Platform 4.1-M2 Community edition
+* eXo Platform 4.1-RC1 Community edition
 * eXo Chat add-on 0.9.0
 
 ## How to
