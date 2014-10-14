@@ -3,11 +3,11 @@
 # - Libre Office
 # - eXo Platform Community
 
-# Build:    docker build -t exoplatform/ubuntu-jdk7-exo-chat:0.9.0 .
+# Build:    docker build -t exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1 .
 #
-# Run:      docker run -t -i --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:0.9.0
-#           docker run -d --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:0.9.0
-#           docker run -d --name="exo-chat" -p 8080:8080 exoplatform/ubuntu-jdk7-exo-chat:0.9.0
+# Run:      docker run -t -i --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1
+#           docker run -d --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1
+#           docker run -d --name="exo-chat" -p 8080:8080 exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1
 
 FROM       exoplatform/ubuntu-jdk7-exo:plf-4.1-rc1
 MAINTAINER DROUET Frederic <fdrouet+docker@exoplatform.com>
@@ -24,7 +24,7 @@ RUN apt-get -qq update && \
 # Install eXo Chat add-on
 # FIXME : replace "exo" by ${EXO_USER} when https://github.com/docker/docker/issues/4909 will be fixed.
 USER exo
-RUN ${EXO_APP_DIR}/current/addon install exo-chat-extension:0.9.0
+RUN ${EXO_APP_DIR}/current/addon install exo-chat-addon:1.0.0-RC1
 
 # Overide eXo Platform startup script to start MongoDB before launching eXo
 RUN mv ${EXO_APP_DIR}/current/start_eXo.sh ${EXO_APP_DIR}/current/start_eXo-ORI.sh
