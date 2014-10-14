@@ -24,3 +24,22 @@
 ![Chat popup in eXo platform](img/chat-popup.jpg "Chat popup in eXo platform")
 ![Main Chat area](img/chat-main.jpg "Main Chat area")
 
+## Container versions history
+
+### 1.0.0-rc1
+
+* Upgrade eXo Chat add-on to 1.0.0-RC1 with a brand new look!
+* Upgrade eXo Platform to 4.1.0-RC1
+
+
+    docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1
+
+### 0.9.0
+
+Initial version of the container with the following content:
+* eXo Platform 4.1-M2
+* eXo Chat add-on 0.9.0
+
+
+    docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:0.9.0
+
