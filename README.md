@@ -43,3 +43,10 @@ Initial version of the container with the following content:
 
     docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:0.9.0
 
+
+## Whish list
+
+* ability to keep data when we upgrade the container
+* ability to use an external MongoDB container / server
+* ability to use an external MySQL database container / server
+* ability to install other add-ons
