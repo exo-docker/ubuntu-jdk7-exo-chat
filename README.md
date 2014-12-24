@@ -1,9 +1,9 @@
 # Ubuntu + Oracle jdk 7 + eXo Platform Community + Chat add-on Docker container
 
-* eXo Chat add-on 1.0.0-RC1
-* eXo Platform 4.1-RC1 Community edition
+* eXo Chat add-on 1.0.0
+* eXo Platform 4.1.0 Community edition
 * MongoDB 2.6
-* Oracle JDK 7 update 60
+* Oracle JDK 7 update 71
 * Ubuntu 14.04
 
 ## How to
@@ -11,7 +11,7 @@
 * run the container
 
 
-    docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1
+    docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:1.0.0
 
 * watch container logs to follow the eXo Platform boot progress
 
@@ -25,6 +25,15 @@
 ![Main Chat area](img/chat-main.jpg "Main Chat area")
 
 ## Container versions history
+
+### 1.0.0
+
+* Upgrade eXo Chat add-on to 1.0.0
+* Upgrade eXo Platform to 4.1.0
+* Upgrade JDK to 7u71
+
+
+docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:1.0.0-rc1
 
 ### 1.0.0-rc1
 
@@ -42,7 +51,6 @@ Initial version of the container with the following content:
 
 
     docker run -d -p 8080:8080 --name="exo-chat" exoplatform/ubuntu-jdk7-exo-chat:0.9.0
-
 
 ## Whish list
 
